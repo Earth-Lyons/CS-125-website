@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Information and Current Academic Courses</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <script>
+        function hide(){
+        survey.style.display = "none";        
+    }
+    
+    function guess(){
+        survey.style.display = "block";
+        
+    } 
+    
+   function getvalue(){
+       alert ("Your favorite subject is " + text.value + "! My favorite subject is Chemistry!");
+   }   
+    </script>
+</head>
+
+<body onload="hide()">
+    <div id="wrapper">
+        <header id="gradient">
+            <h1>Contact Information and Current Academic Courses</h1>
+        </header>
+        <main>
+            <div id="reachme">
+                Reach Me! <br>
+                School Email: <a href="mailto:elyons21@jcu.edu">elyons21@jcu.edu</a><br>
+                Personal Email: <a href="mailto:earthlyons@hotmail.com">earthlyons@hotmail.com</a> <br>
+                Phone Number: 576-408-6740
+            </div>
+            <br><br>
+            <table>
+                <tr>
+                    <th colspan="2">Courses and Description</th>
+                    <th> Why this Class? </th>
+                </tr>
+
+                <tr>
+                    <td>Global Debt and Justice</td>
+                    <td>Examine the global history of debt in relation to religion, culture, economic trade, and imperialism </td>
+                    <td>I sought to understand the cultural and historical approaches to relational debt, power structures, be able to critique the economy and everyday life.</td>
+
+                </tr>
+
+
+                <tr>
+                    <td>Introduction - Web Design and Image Process</td>
+                    <td>Understand responsive website designs while focusing on HTML, CSS, and being introduced to Javascript </td>
+                    <td>I have always been fasinated with comuputer science and forunately, John Carroll offers computer scicence.</td>
+
+                </tr>
+
+                <tr>
+                    <td>Principles of Biology I Laboratory</td>
+                    <td>Demonstrate an integrative knowledge of the human and natural worlds, apply critical and innovative thinking, communicate skillfully in multiple forms of expression, and employ leadership and collaborative skills </td>
+                    <td>This course served to develop my competency in biology. </td>
+
+                </tr>
+
+                <tr>
+                    <td>Database Systems</td>
+                    <td>Introduction to relational database design and implementation </td>
+                    <td>This course served to establish my interaction with a relational database management system. As a part of the computer science realm, I have come to enjoy this course and the topics taught. </td>
+
+                </tr>
+
+                <tr>
+                    <td>Moral Decision Making</td>
+                    <td> Examination of contemporary moral issues with a focus on methods for analyzing and evaluating moral problems and sources from the Christian tradition that form moral identity and ethical decision making. </td>
+                    <td>This course would require me to understand and respect human and cultural differences, examine the conditions that have given rise to injustice, andc nderstand the consequences of injustice.</td>
+
+                </tr>
+
+            </table>
+            <br><br>
+            <div id="guess">
+                <button onclick="guess()" id="guess2">What is your favorite subject?</button>
+            </div>
+            <br><br>
+            <form>
+                <div id="survey">
+                    <h3 id="favorite">Science, Music, Math, History, Drama, P.E., Foreign Language, or a Different Subject!</h3> <br>
+                    <p class="subject">
+                        <input type="text" id="text">
+                        <p class="subject"><input type="submit" value="Submit" onclick="getvalue()"></p>
+                </div>
+            </form>
+        </main>
+        <br> <br>
+        <footer id="footer">
+            <div class="center">
+                <nav>
+                    <ul>
+                        <li> <a href="index.html">Home </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+        </footer>
+        <p class="earthlyons">Earth Lyons<br>John Carroll University<br>Class of 2021</p>
+
+
+    </div>
+</body>
+
+</html>

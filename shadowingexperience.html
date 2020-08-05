@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shadowing Experience</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <script>
+        function hiding() {
+            nextto.style.display = "none";
+            border1.style.display = "none";
+            border2.style.display = "none";
+        }
+
+        function changepics() {
+            if (hospitalpics.value == "pic1") {
+                sitting.style.display = "block";
+                nextto.style.display = "none";
+            }
+
+            if (hospitalpics.value == "pic2") {
+                sitting.style.display = "none";
+                nextto.style.display = "block";
+            }
+        }
+
+        function view1() {
+            border1.style.display = "block";
+            border2.style.display = "none";
+
+        }
+
+        function view2() {
+            border1.style.display = "none";
+            border2.style.display = "block";
+        }
+
+    </script>
+</head>
+
+<body onload="hiding()">
+    <div id="wrapper">
+        <header id="lion2">
+            <h1>Shadowing Experience</h1>
+            <img src="images/lion2.png" alt="lion2" id="look" height="176">
+        </header>
+        <nav>
+            <ul class="main_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shadowingexperience.html">Shadowing Experience</a></li>
+                <li><a href="universityinvolvement.html">University Involvement</a>
+                    <ul class="sub_pages">
+                        <li><a href="frisbee.html">Ultimate Frisbee</a></li>
+                        <li><a href="ems.html">JCU EMS</a></li>
+                        <li><a href="stem.html">It Starts with STEM</a></li>
+                    </ul>
+                </li>
+                <li><a href="communityinvolvement.html">Community Investments</a>
+                    <ul class="sub_pages">
+                        <li><a href="uhvolunteer.html">University Hospitals Ahuja</a></li>
+                        <li><a href="arc.html">American Red Cross: Leaders Save Lives</a></li>
+                        <li><a href="freeclinic.html">The Free Clinic of Greater Cleveland</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div id="ahuja">
+                <p1>University Hospitals Ahuja <br>Shadowing:<br> Anesthesiology</p1>
+            </div>
+            <br><br>
+            <p style="font-weight: bold; text-align: center">Select a Shadowing Experience to Learn More</p>
+            <div id="ah">
+                <button onclick="view1()" id="view1">Robotic Supracervical Hysterectomy </button>
+                <button onclick="view2()" id="view2">Coronary Bypass Graphing</button>
+            </div>
+            <div id="border1">
+                <p style="font-weight: bold">A Robotic Supracervical Hysterectomy</p>
+                This surgery was performed to repair the prolapse and herniation of the uterus and vagina, and the uterus was surgically detached and removed. The robotic assistance allowed for enhanced visualization with magnification and reduced blood loss while being minimally invasive.
+                <br><br>
+                I learned that being a doctor is not always going to be glamorous or as intense as what is preceived, such as on television shows. However, that does not negate the fact that the doctors are still responsible for someone's life and have an obligation to provide the best patient care they can provide.
+                <br><br>
+                <select id="hospitalpics" onchange="changepics()">
+                    <option value="pic1">View Picture 1</option>
+                    <option value="pic2">View Picture 2</option>
+                </select>
+                <div id="photos">
+                    <img src="images/sitingjpg.jpg" alt="sitting" id="sitting">
+                    <img src="images/nextto.jpg" alt="nextto" id="nextto">
+                </div>
+            </div>
+            <div id="border2">
+                <p style="font-weight: bold">
+                    Coronary Bypass Graphing</p>
+                This surgery was performed to redirect blood around a section of a blocked artery in the patient's heart to improve blood flow to his heart muscle. The surgery involved taking a healthy blood vessel from the pateint's arm connecting it beyond the blocked arteries in his heart.
+                <br><br>
+                I learned that it can be frightening! Not only for the patient but the family. The feelings of the family are just as valid and important, and they are as scared and worried as, if not more then, the patient. <br><br>
+                Doctors have fun while being professional <br><br>
+                Complacency results in a dangerous situation<br><br>
+                Vigilance is key and always know your stuff <br><br>
+                Be deliberate and forceful and take-charge when needed (ie. a code).<br><br>
+                Echoing orders is needed for proper communication.<br><br>
+                <img src="images/heart.jpg" alt="heart" id="heart"><br>
+                <p id="hearts">The doctors used a x-clamp to stop flow to the heart. From the right aorta, blood is pumped to the rest of the body, while potassium is pumped into the heart to stop it!</p>
+
+            </div>
+            <br><br>
+            <div>
+            </div>
+
+
+
+        </main>
+        <br>
+        <footer id="footer">
+            <div class="left">
+                <nav>
+                    <ul>
+                        <li> <a href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <nav>
+                    <ul>
+                        <li> <a href="universityinvolvement.html">University Involvement</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+        </footer>
+        <p class="earthlyons">Earth Lyons<br>John Carroll University<br>Class of 2021</p>
+    </div>
+
+</body>
